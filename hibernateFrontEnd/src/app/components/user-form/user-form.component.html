@@ -1,0 +1,23 @@
+<div>
+    <h2>Create User</h2>
+    <form (ngSubmit)="saveUser()">
+      <div>
+        <label>Name</label>
+        <input [(ngModel)]="user.name" name="name">
+      </div>
+      <div>
+        <label>Email</label>
+        <input [(ngModel)]="user.email" name="email">
+      </div>
+      <div>
+        <label>Address</label>
+        <input [(ngModel)]="profile.address" name="address">
+      </div>
+      <div>
+        <label>Phone Number</label>
+        <input [(ngModel)]="profile.phoneNumber" name="phoneNumber">
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+  
